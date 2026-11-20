@@ -647,8 +647,36 @@ button { cursor: pointer; font-family: var(--font); border: none; background: no
   background: rgba(255,255,255,0.05); border: 1px solid var(--border);
   color: var(--text-2);
 }
-.proj-footer-row { border-top: 1px solid var(--border); padding-top: 12px; }
+.proj-footer-row {
+  border-top: 1px solid var(--border);
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 .proj-team-info { font-size: 0.78rem; color: var(--text-3); }
+.proj-code-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--teal);
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(20,184,166,0.3);
+  background: rgba(20,184,166,0.08);
+  transition: var(--transition);
+}
+.proj-code-btn:hover {
+  background: rgba(20,184,166,0.2);
+  border-color: var(--teal);
+  color: #fff;
+  transform: translateY(-1px);
+}
 
 /* ═══════════════════════════════════════════════
    EDUCATION
